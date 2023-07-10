@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		471085142A5BE78500E14884 /* MrtCardScannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471085132A5BE78500E14884 /* MrtCardScannerApp.swift */; };
+		471085162A5BE78500E14884 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471085152A5BE78500E14884 /* ContentView.swift */; };
+		471085182A5BE78600E14884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 471085172A5BE78600E14884 /* Assets.xcassets */; };
+		4710851B2A5BE78600E14884 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4710851A2A5BE78600E14884 /* Preview Assets.xcassets */; };
+		4710851D2A5BE78600E14884 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4710851C2A5BE78600E14884 /* Persistence.swift */; };
+		471085202A5BE78600E14884 /* MrtCardScanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4710851E2A5BE78600E14884 /* MrtCardScanner.xcdatamodeld */; };
+		4710852A2A5BE78600E14884 /* MrtCardScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471085292A5BE78600E14884 /* MrtCardScannerTests.swift */; };
+		471085342A5BE78600E14884 /* MrtCardScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471085332A5BE78600E14884 /* MrtCardScannerUITests.swift */; };
+		471085362A5BE78600E14884 /* MrtCardScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471085352A5BE78600E14884 /* MrtCardScannerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		471085262A5BE78600E14884 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 471085082A5BE78500E14884 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4710850F2A5BE78500E14884;
+			remoteInfo = MrtCardScanner;
+		};
+		471085302A5BE78600E14884 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 471085082A5BE78500E14884 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4710850F2A5BE78500E14884;
+			remoteInfo = MrtCardScanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		471085102A5BE78500E14884 /* MrtCardScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MrtCardScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		471085132A5BE78500E14884 /* MrtCardScannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrtCardScannerApp.swift; sourceTree = "<group>"; };
+		471085152A5BE78500E14884 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		471085172A5BE78600E14884 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4710851A2A5BE78600E14884 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4710851C2A5BE78600E14884 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4710851F2A5BE78600E14884 /* MrtCardScanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MrtCardScanner.xcdatamodel; sourceTree = "<group>"; };
+		471085252A5BE78600E14884 /* MrtCardScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MrtCardScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		471085292A5BE78600E14884 /* MrtCardScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrtCardScannerTests.swift; sourceTree = "<group>"; };
+		4710852F2A5BE78600E14884 /* MrtCardScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MrtCardScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		471085332A5BE78600E14884 /* MrtCardScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrtCardScannerUITests.swift; sourceTree = "<group>"; };
+		471085352A5BE78600E14884 /* MrtCardScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrtCardScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4710850D2A5BE78500E14884 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		471085222A5BE78600E14884 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4710852C2A5BE78600E14884 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		471085072A5BE78500E14884 = {
+			isa = PBXGroup;
+			children = (
+				471085122A5BE78500E14884 /* MrtCardScanner */,
+				471085282A5BE78600E14884 /* MrtCardScannerTests */,
+				471085322A5BE78600E14884 /* MrtCardScannerUITests */,
+				471085112A5BE78500E14884 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		471085112A5BE78500E14884 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				471085102A5BE78500E14884 /* MrtCardScanner.app */,
+				471085252A5BE78600E14884 /* MrtCardScannerTests.xctest */,
+				4710852F2A5BE78600E14884 /* MrtCardScannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		471085122A5BE78500E14884 /* MrtCardScanner */ = {
+			isa = PBXGroup;
+			children = (
+				471085132A5BE78500E14884 /* MrtCardScannerApp.swift */,
+				471085152A5BE78500E14884 /* ContentView.swift */,
+				471085172A5BE78600E14884 /* Assets.xcassets */,
+				4710851C2A5BE78600E14884 /* Persistence.swift */,
+				4710851E2A5BE78600E14884 /* MrtCardScanner.xcdatamodeld */,
+				471085192A5BE78600E14884 /* Preview Content */,
+			);
+			path = MrtCardScanner;
+			sourceTree = "<group>";
+		};
+		471085192A5BE78600E14884 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4710851A2A5BE78600E14884 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		471085282A5BE78600E14884 /* MrtCardScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				471085292A5BE78600E14884 /* MrtCardScannerTests.swift */,
+			);
+			path = MrtCardScannerTests;
+			sourceTree = "<group>";
+		};
+		471085322A5BE78600E14884 /* MrtCardScannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				471085332A5BE78600E14884 /* MrtCardScannerUITests.swift */,
+				471085352A5BE78600E14884 /* MrtCardScannerUITestsLaunchTests.swift */,
+			);
+			path = MrtCardScannerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4710850F2A5BE78500E14884 /* MrtCardScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 471085392A5BE78600E14884 /* Build configuration list for PBXNativeTarget "MrtCardScanner" */;
+			buildPhases = (
+				4710850C2A5BE78500E14884 /* Sources */,
+				4710850D2A5BE78500E14884 /* Frameworks */,
+				4710850E2A5BE78500E14884 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MrtCardScanner;
+			productName = MrtCardScanner;
+			productReference = 471085102A5BE78500E14884 /* MrtCardScanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		471085242A5BE78600E14884 /* MrtCardScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4710853C2A5BE78600E14884 /* Build configuration list for PBXNativeTarget "MrtCardScannerTests" */;
+			buildPhases = (
+				471085212A5BE78600E14884 /* Sources */,
+				471085222A5BE78600E14884 /* Frameworks */,
+				471085232A5BE78600E14884 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				471085272A5BE78600E14884 /* PBXTargetDependency */,
+			);
+			name = MrtCardScannerTests;
+			productName = MrtCardScannerTests;
+			productReference = 471085252A5BE78600E14884 /* MrtCardScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4710852E2A5BE78600E14884 /* MrtCardScannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4710853F2A5BE78600E14884 /* Build configuration list for PBXNativeTarget "MrtCardScannerUITests" */;
+			buildPhases = (
+				4710852B2A5BE78600E14884 /* Sources */,
+				4710852C2A5BE78600E14884 /* Frameworks */,
+				4710852D2A5BE78600E14884 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				471085312A5BE78600E14884 /* PBXTargetDependency */,
+			);
+			name = MrtCardScannerUITests;
+			productName = MrtCardScannerUITests;
+			productReference = 4710852F2A5BE78600E14884 /* MrtCardScannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		471085082A5BE78500E14884 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4710850F2A5BE78500E14884 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					471085242A5BE78600E14884 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4710850F2A5BE78500E14884;
+					};
+					4710852E2A5BE78600E14884 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4710850F2A5BE78500E14884;
+					};
+				};
+			};
+			buildConfigurationList = 4710850B2A5BE78500E14884 /* Build configuration list for PBXProject "MrtCardScanner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 471085072A5BE78500E14884;
+			productRefGroup = 471085112A5BE78500E14884 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4710850F2A5BE78500E14884 /* MrtCardScanner */,
+				471085242A5BE78600E14884 /* MrtCardScannerTests */,
+				4710852E2A5BE78600E14884 /* MrtCardScannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4710850E2A5BE78500E14884 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4710851B2A5BE78600E14884 /* Preview Assets.xcassets in Resources */,
+				471085182A5BE78600E14884 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		471085232A5BE78600E14884 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4710852D2A5BE78600E14884 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4710850C2A5BE78500E14884 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4710851D2A5BE78600E14884 /* Persistence.swift in Sources */,
+				471085162A5BE78500E14884 /* ContentView.swift in Sources */,
+				471085202A5BE78600E14884 /* MrtCardScanner.xcdatamodeld in Sources */,
+				471085142A5BE78500E14884 /* MrtCardScannerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		471085212A5BE78600E14884 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4710852A2A5BE78600E14884 /* MrtCardScannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4710852B2A5BE78600E14884 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471085342A5BE78600E14884 /* MrtCardScannerUITests.swift in Sources */,
+				471085362A5BE78600E14884 /* MrtCardScannerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		471085272A5BE78600E14884 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4710850F2A5BE78500E14884 /* MrtCardScanner */;
+			targetProxy = 471085262A5BE78600E14884 /* PBXContainerItemProxy */;
+		};
+		471085312A5BE78600E14884 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4710850F2A5BE78500E14884 /* MrtCardScanner */;
+			targetProxy = 471085302A5BE78600E14884 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		471085372A5BE78600E14884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		471085382A5BE78600E14884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4710853A2A5BE78600E14884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MrtCardScanner/Preview Content\"";
+				DEVELOPMENT_TEAM = HJ9L53D9PB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonahaung.MrtCardScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4710853B2A5BE78600E14884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MrtCardScanner/Preview Content\"";
+				DEVELOPMENT_TEAM = HJ9L53D9PB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonahaung.MrtCardScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4710853D2A5BE78600E14884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HJ9L53D9PB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonahaung.MrtCardScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MrtCardScanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MrtCardScanner";
+			};
+			name = Debug;
+		};
+		4710853E2A5BE78600E14884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HJ9L53D9PB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonahaung.MrtCardScannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MrtCardScanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MrtCardScanner";
+			};
+			name = Release;
+		};
+		471085402A5BE78600E14884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HJ9L53D9PB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonahaung.MrtCardScannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MrtCardScanner;
+			};
+			name = Debug;
+		};
+		471085412A5BE78600E14884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HJ9L53D9PB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonahaung.MrtCardScannerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MrtCardScanner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4710850B2A5BE78500E14884 /* Build configuration list for PBXProject "MrtCardScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				471085372A5BE78600E14884 /* Debug */,
+				471085382A5BE78600E14884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		471085392A5BE78600E14884 /* Build configuration list for PBXNativeTarget "MrtCardScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4710853A2A5BE78600E14884 /* Debug */,
+				4710853B2A5BE78600E14884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4710853C2A5BE78600E14884 /* Build configuration list for PBXNativeTarget "MrtCardScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4710853D2A5BE78600E14884 /* Debug */,
+				4710853E2A5BE78600E14884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4710853F2A5BE78600E14884 /* Build configuration list for PBXNativeTarget "MrtCardScannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				471085402A5BE78600E14884 /* Debug */,
+				471085412A5BE78600E14884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4710851E2A5BE78600E14884 /* MrtCardScanner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4710851F2A5BE78600E14884 /* MrtCardScanner.xcdatamodel */,
+			);
+			currentVersion = 4710851F2A5BE78600E14884 /* MrtCardScanner.xcdatamodel */;
+			path = MrtCardScanner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 471085082A5BE78500E14884 /* Project object */;
+}
