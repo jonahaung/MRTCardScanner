@@ -1,33 +1,12 @@
 //
-//  NFCScanner.swift
+//  Scanner.swift
 //  MrtCardScanner
 //
 //  Created by Aung Ko Min on 12/7/23.
 //
 
-import SwiftUI
+import Foundation
 import CoreNFC
-
-public class NFCScanner: ObservableObject {
-    
-    @Published var cardDetail: NFCCardDetail?
-    
-    private let interactor = NFCCardScannerInteractor()
-    
-    public init() {
-        interactor.setNfcCardDetectedBlock { [weak self] card in
-            guard let self else { return }
-            DispatchQueue.main.async {
-                self.cardDetail = card
-            }
-        }
-    }
-    
-    public func beginScan() {
-        interactor.beginScan()
-    }
-}
-
 
 class NFCCardScannerInteractor: NSObject {
     
@@ -58,7 +37,6 @@ class NFCCardScannerInteractor: NSObject {
     }
 }
 
-@available(iOS 13.0, *)
 extension NFCCardScannerInteractor: NFCCommandInteractor, NFCTagReaderSessionDelegate {
     
     func tagReaderSessionDidBecomeActive(_ session: NFCTagReaderSession) {
@@ -110,28 +88,6 @@ extension NFCCardScannerInteractor: NFCCommandInteractor, NFCTagReaderSessionDel
         return "Scanning: \(stepInPercentage)%...Tap and hold your MRT Card at the NFC scanning area. Do not remove until it reaches 100%."
     }
 }
-enum ExpressCardTapStepMapping: Float {
-    case tagConnected = 1
-    case getChallengeSuccess = 2
-    case getCardInfoSuccess = 3
-}
-
-
-enum NFCTapError: Error {
-    case getChallengeFaild
-    case reachMaximumAmount
-    case wrongCard
-    case fetchPurseFailed
-    case getPurseFailed
-    case getSecPurseFailed
-    case fetchPurseValidationResultFailed
-    case fetchTopUpCommandFailed
-    case getTopUpResultFailed
-    case fetchTopUpTransactionValidationResultFailed
-    case getTroubleshootingTxnFailed
-    case troubleshootingFailed
-}
-
 
 protocol NFCCommandInteractor {}
 

@@ -1,14 +1,13 @@
 //
-//  NSNumber+.swift
-//  EZ-PZ-iOS
+//  ContentView.swift
+//  MrtCardScanner
 //
-//  Created by Yu Wang on 2020/7/17.
-//  Copyright © 2020 ezlink. All rights reserved.
+//  Created by Aung Ko Min on 10/7/23.
 //
 
 import Foundation
 
-extension NSNumber {
+public extension NSNumber {
     func currencyFormat() -> String? {
         let format = NumberFormatter()
         format.numberStyle = .currency

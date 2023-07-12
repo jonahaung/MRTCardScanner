@@ -1,14 +1,13 @@
 //
-//  String+.swift
-//  NFCExample
+//  ContentView.swift
+//  MrtCardScanner
 //
-//  Created by Yu Wang on 2020/6/12.
-//  Copyright © 2020 Charles. All rights reserved.
+//  Created by Aung Ko Min on 10/7/23.
 //
 
 import Foundation
 
-extension StringProtocol {
+public extension StringProtocol {
     var hexaData: Data { .init(hexa) }
     var hexaBytes: [UInt8] { .init(hexa) }
     private var hexa: UnfoldSequence<UInt8, Index> {

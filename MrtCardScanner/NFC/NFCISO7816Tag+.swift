@@ -1,16 +1,15 @@
 //
-//  NFCISO7816Tag+.swift
-//  EZ-PZ-iOS
+//  ContentView.swift
+//  MrtCardScanner
 //
-//  Created by Yu Wang on 2020/6/11.
-//  Copyright © 2020 ezlink. All rights reserved.
+//  Created by Aung Ko Min on 10/7/23.
 //
 
 import Foundation
 import CoreNFC
 
 typealias APDUCommandCompletion = (Result<(resp: Data, sw1: String, sw2: String), Error>) -> Void
-private let tagScanQeueue = DispatchQueue(label: "com.ezlink.EzLinkActivate.nfc", qos: .userInitiated)
+private let tagScanQeueue = DispatchQueue(label: "com.jonahaung.MRTCardScanner.nfc", qos: .userInitiated)
 
 @available(iOS 13.0, *)
 extension NFCISO7816Tag {

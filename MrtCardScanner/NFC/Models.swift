@@ -43,6 +43,28 @@ public struct NFCCardSecure: Codable {
         case purseData = "purse_data"
     }
 }
+public enum ExpressCardTapStepMapping: Float {
+    case tagConnected = 1
+    case getChallengeSuccess = 2
+    case getCardInfoSuccess = 3
+}
+
+
+public enum NFCTapError: Error {
+    case getChallengeFaild
+    case reachMaximumAmount
+    case wrongCard
+    case fetchPurseFailed
+    case getPurseFailed
+    case getSecPurseFailed
+    case fetchPurseValidationResultFailed
+    case fetchTopUpCommandFailed
+    case getTopUpResultFailed
+    case fetchTopUpTransactionValidationResultFailed
+    case getTroubleshootingTxnFailed
+    case troubleshootingFailed
+}
+
 
 public struct NFCCardTransaction: Codable {
     let txnType: String

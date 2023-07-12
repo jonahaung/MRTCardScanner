@@ -1,9 +1,8 @@
 //
-//  NFCUtility.swift
-//  EZ-PZ-iOS
+//  ContentView.swift
+//  MrtCardScanner
 //
-//  Created by Yu Wang on 2020/6/23.
-//  Copyright © 2020 ezlink. All rights reserved.
+//  Created by Aung Ko Min on 10/7/23.
 //
 
 import Foundation

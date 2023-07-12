@@ -24,6 +24,7 @@
 		47347BF52A5E662E00E59C35 /* NFCScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347BF42A5E662E00E59C35 /* NFCScanner.swift */; };
 		47347BF72A5E6E8200E59C35 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347BF62A5E6E8200E59C35 /* Models.swift */; };
 		47347BF92A5E6EC300E59C35 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347BF82A5E6EC300E59C35 /* Extensions.swift */; };
+		47347BFB2A5E997F00E59C35 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347BFA2A5E997F00E59C35 /* Scanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,18 +59,15 @@
 		471085352A5BE78600E14884 /* MrtCardScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrtCardScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		471085422A5BE82D00E14884 /* MrtCardScanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MrtCardScanner.entitlements; sourceTree = "<group>"; };
 		471085452A5BECF100E14884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		471085472A5BEF9000E14884 /* NFCCardDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCCardDetail.swift; sourceTree = "<group>"; };
-		471085482A5BEF9000E14884 /* Data+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Hex.swift"; sourceTree = "<group>"; };
 		471085492A5BEF9000E14884 /* NSNumber+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNumber+.swift"; sourceTree = "<group>"; };
 		4710854A2A5BEF9000E14884 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		4710854B2A5BEF9000E14884 /* NFCISO7816Tag+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NFCISO7816Tag+.swift"; sourceTree = "<group>"; };
 		4710854C2A5BEF9000E14884 /* NFCUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCUtility.swift; sourceTree = "<group>"; };
-		4710854D2A5BEF9000E14884 /* NFCCardSecure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCCardSecure.swift; sourceTree = "<group>"; };
-		4710854E2A5BEF9000E14884 /* NFCCommandInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCCommandInteractor.swift; sourceTree = "<group>"; };
 		47347BF22A5E653600E59C35 /* Data+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Data+Hex.swift"; path = "../../../SimplyGo/EZ-PZ-iOS/Data+Hex.swift"; sourceTree = "<group>"; };
 		47347BF42A5E662E00E59C35 /* NFCScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCScanner.swift; sourceTree = "<group>"; };
 		47347BF62A5E6E8200E59C35 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		47347BF82A5E6EC300E59C35 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		47347BFA2A5E997F00E59C35 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,9 +121,6 @@
 				471085452A5BECF100E14884 /* Info.plist */,
 				471085422A5BE82D00E14884 /* MrtCardScanner.entitlements */,
 				471085132A5BE78500E14884 /* MrtCardScannerApp.swift */,
-				47347BF42A5E662E00E59C35 /* NFCScanner.swift */,
-				47347BF62A5E6E8200E59C35 /* Models.swift */,
-				47347BF82A5E6EC300E59C35 /* Extensions.swift */,
 				471085152A5BE78500E14884 /* ContentView.swift */,
 				471085462A5BEF8100E14884 /* NFC */,
 				471085432A5BE8EC00E14884 /* Resources */,
@@ -180,15 +175,15 @@
 		471085462A5BEF8100E14884 /* NFC */ = {
 			isa = PBXGroup;
 			children = (
-				471085482A5BEF9000E14884 /* Data+Hex.swift */,
-				471085472A5BEF9000E14884 /* NFCCardDetail.swift */,
-				4710854D2A5BEF9000E14884 /* NFCCardSecure.swift */,
-				4710854E2A5BEF9000E14884 /* NFCCommandInteractor.swift */,
+				47347BF42A5E662E00E59C35 /* NFCScanner.swift */,
+				47347BFA2A5E997F00E59C35 /* Scanner.swift */,
+				47347BF62A5E6E8200E59C35 /* Models.swift */,
 				4710854B2A5BEF9000E14884 /* NFCISO7816Tag+.swift */,
 				4710854C2A5BEF9000E14884 /* NFCUtility.swift */,
 				471085492A5BEF9000E14884 /* NSNumber+.swift */,
 				47347BF22A5E653600E59C35 /* Data+Hex.swift */,
 				4710854A2A5BEF9000E14884 /* String+.swift */,
+				47347BF82A5E6EC300E59C35 /* Extensions.swift */,
 			);
 			path = NFC;
 			sourceTree = "<group>";
@@ -333,6 +328,7 @@
 				471085162A5BE78500E14884 /* ContentView.swift in Sources */,
 				47347BF32A5E653600E59C35 /* Data+Hex.swift in Sources */,
 				47347BF52A5E662E00E59C35 /* NFCScanner.swift in Sources */,
+				47347BFB2A5E997F00E59C35 /* Scanner.swift in Sources */,
 				471085522A5BEF9000E14884 /* String+.swift in Sources */,
 				47347BF92A5E6EC300E59C35 /* Extensions.swift in Sources */,
 				471085202A5BE78600E14884 /* MrtCardScanner.xcdatamodeld in Sources */,
