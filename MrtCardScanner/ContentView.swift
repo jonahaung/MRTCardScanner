@@ -9,80 +9,76 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-
+    
+    @StateObject private var scanner = NFCScanner()
+    
     var body: some View {
         NavigationView {
             List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+                if let card = scanner.cardDetail {
+                    Section("General Details") {
+                        Text("Can ID").badge(card.formattedCan)
+                        Text("Expiry Date").badge(card.formattedExpireDate)
+                        Text("Card Profile").badge(card.cardProfile)
+                        Text("Card Profile Type").badge(card.cardProfileType?.rawValue ?? "NA")
+                        Text("Is Concession Card").badge(card.isCCCard ? "Yes" : "No")
                     }
+                    
+                    Section("Purse") {
+                        Text("Purse Balance").badge(card.formattedBalance)
+                        Text("Balance Status").badge(card.balanceStatus.rawValue)
+                        Text("Purse Balance (Int)").badge(card.purseBalanceInt.description)
+                        Text("Autoload Status").badge(card.autoloadStatus)
+                        Text("Purse Status").badge(card.purseStatus)
+                        Text("Autoload Amount").badge(card.autoloadAmount)
+                        
+                        if let x = card.cardProfileType {
+                            Text("Profile Type").badge("\(x.hashValue)")
+                        }
+                    }
+                    
+                    if let lastTxt = card.lastTxn {
+                        Section("Last Transaction") {
+                            Text("Transaction Amount").badge(lastTxt.txnAmt)
+                            Text("Transaction Type").badge(lastTxt.txnType)
+                            Text("Transaction Date").badge(lastTxt.txnDatetime)
+                        }
+                    }
+                    if let histories = card.txnHistory {
+                        Section("Transaction History") {
+                            
+                            Text("historyRecordNum").badge(card.historyRecordNum.description)
+                            
+                            ForEach(histories, id: \.txnDatetime) { each in
+                                Text("Transaction Amount").badge(each.txnAmt)
+                                Text("Transaction Type").badge(each.txnType)
+                                Text("Transaction Date").badge(each.txnDatetime)
+                            }
+                        }
+                    }
+                } else {
+                    Text("Please tap the Start Scanning button to scan your card")
                 }
-                .onDelete(perform: deleteItems)
             }
+            .navigationTitle("MRT Card Scanner")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                    Button(role: .none) {
+                        scanner.beginScan()
+                    } label: {
+                        Text("Start Scanning")
                     }
+                    .disabled(scanner.cardDetail != nil)
+                }
+                
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(role: .destructive) {
+                        scanner.cardDetail = nil
+                    } label: {
+                        Text("Reset")
+                    }.disabled(scanner.cardDetail == nil)
                 }
             }
-            Text("Select an item")
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-}
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

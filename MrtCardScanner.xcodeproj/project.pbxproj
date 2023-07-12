@@ -16,6 +16,14 @@
 		4710852A2A5BE78600E14884 /* MrtCardScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471085292A5BE78600E14884 /* MrtCardScannerTests.swift */; };
 		471085342A5BE78600E14884 /* MrtCardScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471085332A5BE78600E14884 /* MrtCardScannerUITests.swift */; };
 		471085362A5BE78600E14884 /* MrtCardScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471085352A5BE78600E14884 /* MrtCardScannerUITestsLaunchTests.swift */; };
+		471085512A5BEF9000E14884 /* NSNumber+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471085492A5BEF9000E14884 /* NSNumber+.swift */; };
+		471085522A5BEF9000E14884 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4710854A2A5BEF9000E14884 /* String+.swift */; };
+		471085532A5BEF9000E14884 /* NFCISO7816Tag+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4710854B2A5BEF9000E14884 /* NFCISO7816Tag+.swift */; };
+		471085542A5BEF9000E14884 /* NFCUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4710854C2A5BEF9000E14884 /* NFCUtility.swift */; };
+		47347BF32A5E653600E59C35 /* Data+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347BF22A5E653600E59C35 /* Data+Hex.swift */; };
+		47347BF52A5E662E00E59C35 /* NFCScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347BF42A5E662E00E59C35 /* NFCScanner.swift */; };
+		47347BF72A5E6E8200E59C35 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347BF62A5E6E8200E59C35 /* Models.swift */; };
+		47347BF92A5E6EC300E59C35 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47347BF82A5E6EC300E59C35 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +56,20 @@
 		4710852F2A5BE78600E14884 /* MrtCardScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MrtCardScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		471085332A5BE78600E14884 /* MrtCardScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrtCardScannerUITests.swift; sourceTree = "<group>"; };
 		471085352A5BE78600E14884 /* MrtCardScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MrtCardScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		471085422A5BE82D00E14884 /* MrtCardScanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MrtCardScanner.entitlements; sourceTree = "<group>"; };
+		471085452A5BECF100E14884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		471085472A5BEF9000E14884 /* NFCCardDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCCardDetail.swift; sourceTree = "<group>"; };
+		471085482A5BEF9000E14884 /* Data+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Hex.swift"; sourceTree = "<group>"; };
+		471085492A5BEF9000E14884 /* NSNumber+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNumber+.swift"; sourceTree = "<group>"; };
+		4710854A2A5BEF9000E14884 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		4710854B2A5BEF9000E14884 /* NFCISO7816Tag+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NFCISO7816Tag+.swift"; sourceTree = "<group>"; };
+		4710854C2A5BEF9000E14884 /* NFCUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCUtility.swift; sourceTree = "<group>"; };
+		4710854D2A5BEF9000E14884 /* NFCCardSecure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCCardSecure.swift; sourceTree = "<group>"; };
+		4710854E2A5BEF9000E14884 /* NFCCommandInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NFCCommandInteractor.swift; sourceTree = "<group>"; };
+		47347BF22A5E653600E59C35 /* Data+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Data+Hex.swift"; path = "../../../SimplyGo/EZ-PZ-iOS/Data+Hex.swift"; sourceTree = "<group>"; };
+		47347BF42A5E662E00E59C35 /* NFCScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCScanner.swift; sourceTree = "<group>"; };
+		47347BF62A5E6E8200E59C35 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		47347BF82A5E6EC300E59C35 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +120,16 @@
 		471085122A5BE78500E14884 /* MrtCardScanner */ = {
 			isa = PBXGroup;
 			children = (
+				471085452A5BECF100E14884 /* Info.plist */,
+				471085422A5BE82D00E14884 /* MrtCardScanner.entitlements */,
 				471085132A5BE78500E14884 /* MrtCardScannerApp.swift */,
+				47347BF42A5E662E00E59C35 /* NFCScanner.swift */,
+				47347BF62A5E6E8200E59C35 /* Models.swift */,
+				47347BF82A5E6EC300E59C35 /* Extensions.swift */,
 				471085152A5BE78500E14884 /* ContentView.swift */,
-				471085172A5BE78600E14884 /* Assets.xcassets */,
-				4710851C2A5BE78600E14884 /* Persistence.swift */,
-				4710851E2A5BE78600E14884 /* MrtCardScanner.xcdatamodeld */,
+				471085462A5BEF8100E14884 /* NFC */,
+				471085432A5BE8EC00E14884 /* Resources */,
+				471085442A5BE8F500E14884 /* Coredata */,
 				471085192A5BE78600E14884 /* Preview Content */,
 			);
 			path = MrtCardScanner;
@@ -133,6 +160,39 @@
 			path = MrtCardScannerUITests;
 			sourceTree = "<group>";
 		};
+		471085432A5BE8EC00E14884 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				471085172A5BE78600E14884 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		471085442A5BE8F500E14884 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				4710851C2A5BE78600E14884 /* Persistence.swift */,
+				4710851E2A5BE78600E14884 /* MrtCardScanner.xcdatamodeld */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		471085462A5BEF8100E14884 /* NFC */ = {
+			isa = PBXGroup;
+			children = (
+				471085482A5BEF9000E14884 /* Data+Hex.swift */,
+				471085472A5BEF9000E14884 /* NFCCardDetail.swift */,
+				4710854D2A5BEF9000E14884 /* NFCCardSecure.swift */,
+				4710854E2A5BEF9000E14884 /* NFCCommandInteractor.swift */,
+				4710854B2A5BEF9000E14884 /* NFCISO7816Tag+.swift */,
+				4710854C2A5BEF9000E14884 /* NFCUtility.swift */,
+				471085492A5BEF9000E14884 /* NSNumber+.swift */,
+				47347BF22A5E653600E59C35 /* Data+Hex.swift */,
+				4710854A2A5BEF9000E14884 /* String+.swift */,
+			);
+			path = NFC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +209,8 @@
 			dependencies = (
 			);
 			name = MrtCardScanner;
+			packageProductDependencies = (
+			);
 			productName = MrtCardScanner;
 			productReference = 471085102A5BE78500E14884 /* MrtCardScanner.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +283,8 @@
 				Base,
 			);
 			mainGroup = 471085072A5BE78500E14884;
+			packageReferences = (
+			);
 			productRefGroup = 471085112A5BE78500E14884 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,10 +327,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47347BF72A5E6E8200E59C35 /* Models.swift in Sources */,
 				4710851D2A5BE78600E14884 /* Persistence.swift in Sources */,
+				471085532A5BEF9000E14884 /* NFCISO7816Tag+.swift in Sources */,
 				471085162A5BE78500E14884 /* ContentView.swift in Sources */,
+				47347BF32A5E653600E59C35 /* Data+Hex.swift in Sources */,
+				47347BF52A5E662E00E59C35 /* NFCScanner.swift in Sources */,
+				471085522A5BEF9000E14884 /* String+.swift in Sources */,
+				47347BF92A5E6EC300E59C35 /* Extensions.swift in Sources */,
 				471085202A5BE78600E14884 /* MrtCardScanner.xcdatamodeld in Sources */,
+				471085542A5BEF9000E14884 /* NFCUtility.swift in Sources */,
 				471085142A5BE78500E14884 /* MrtCardScannerApp.swift in Sources */,
+				471085512A5BEF9000E14884 /* NSNumber+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,17 +494,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MrtCardScanner/MrtCardScanner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MrtCardScanner/Preview Content\"";
 				DEVELOPMENT_TEAM = HJ9L53D9PB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MrtCardScanner/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "TO DO";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,17 +527,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MrtCardScanner/MrtCardScanner.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MrtCardScanner/Preview Content\"";
 				DEVELOPMENT_TEAM = HJ9L53D9PB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MrtCardScanner/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "TO DO";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
